@@ -31,7 +31,8 @@ import com.example.activity5.R
 enum class PengelolaHalaman {
     Home,
     Rasa,
-    Summary
+    Summary,
+    Costumer,
 }
 
 @Composable
@@ -85,7 +86,7 @@ fun EsJumboApp(
             {
                 HalamanHome(
                     onNextButtonClicked = {
-                        navController.navigate(PengelolaHalaman.Rasa.name) })
+                        navController.navigate(PengelolaHalaman.Costumer.name) })
             }
             composable(route =PengelolaHalaman.Rasa.name) {
                 val context = LocalContext.current
