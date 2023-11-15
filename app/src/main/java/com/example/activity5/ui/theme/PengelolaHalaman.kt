@@ -96,20 +96,16 @@ fun EsJumboApp(
                     onCancelButtonClicked = {
                         navController.navigate(PengelolaHalaman.Home.name)
                     },
-                    )}
+                    )
+            }
             composable(route =PengelolaHalaman.Rasa.name) {
                 val context = LocalContext.current
                 HalamanSatu(
                     pilihanRasa = flavors. map { id -> context.resources.getString(id)},
                     onSelectionChanged = { viewModel.setRasa(it)},
                     onConfirmButtonClicked = {viewModel.setJumlah(it)},
-                    onNextButtonClicked = {
-                        navController.navigate(PengelolaHalaman.Summary.name)
-                    },
-                    onCancelButtonClicked = {cancelOrderAndNavigateToHome(
-                        viewModel,
-                        navController
-                    )
+                    onNextButtonClicked = { navController.navigate(PengelolaHalaman.Summary.name) },
+                    onCancelButtonClicked = {
                     })
             }
             composable(route = PengelolaHalaman.Summary.name){
