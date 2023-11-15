@@ -15,7 +15,7 @@ class OrderViewModel : ViewModel() {
     val stateUi : StateFlow<OrderUiState> = _stateUi.asStateFlow()
 
 
-    fun setPelanggan(nama: String, nomor: String, alamat:String){
+    fun setCostumer(nama: String, nomor: String, alamat:String){
         _stateUi.update { stateSaatIni ->
             stateSaatIni.copy(
                 namaCostumer = nama,
