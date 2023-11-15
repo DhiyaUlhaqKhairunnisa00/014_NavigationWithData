@@ -91,6 +91,7 @@ fun EsJumboApp(
                 Costumer(
                     onConfirmButtonClicked = { nama, nomor, alamat ->
                         viewModel.setCostumer(nama, nomor, alamat)
+                        navController.navigate(PengelolaHalaman.Rasa.name)
                     },
                     onCancelButtonClicked = {
                         navController.navigate(PengelolaHalaman.Home.name)
