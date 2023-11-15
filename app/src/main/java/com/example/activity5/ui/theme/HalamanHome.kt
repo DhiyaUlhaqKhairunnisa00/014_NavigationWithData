@@ -60,15 +60,15 @@ fun HalamanHome(
                 Text(
                     text = "Es Teh",
                     color = Color.DarkGray,
-                    fontFamily = FontFamily.Cursive,
+                    fontFamily = FontFamily.Serif,
                     fontSize = 35.sp,
                     modifier = Modifier
                         .align(Alignment.CenterHorizontally)
                 )
                 Text(
-                    text = "Nusantara",
+                    text = "UHHUYYYY",
                     color = Color.DarkGray,
-                    fontFamily = FontFamily.Cursive,
+                    fontFamily = FontFamily.Serif,
                     fontStyle = FontStyle.Italic,
                     fontSize = 40.sp,
                     fontWeight = FontWeight.Bold
