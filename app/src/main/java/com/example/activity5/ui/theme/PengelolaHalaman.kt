@@ -71,9 +71,7 @@ fun EsJumboApp(
         topBar = {
             EsJumboAppBar(
                 bisaNavigasiBack = false,
-                navigasiUp = { /*TODO: implement back navigation*/
-                }
-            )
+                navigasiUp = {})
         }
     ){
         innerPadding ->
